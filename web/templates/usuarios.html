@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tu Mascota</title>
+    <link href="static/css/inicio.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<div class="box">
+    <ul class="nav">
+            <li><a href="inicio">Inicio</a></li>
+            <li><a href="veterinarias">Veterinarias</a></li>
+            <li><a href="refugios">Refugios</a></li>
+            <li><a href="hotel">Hotel para mascotas</a></li>
+            <li><a href="nosotros">Nosotros</a></li>
+            <li><a href="usuarios">Usuarios</a></li>
+            <li><a href="donaciones">Donaciones</a></li>
+    </ul>
+    <section class="section1">
+        <div class="section__nav">
+            <a href="Perdida1"><img src="uploads/perdido1.jpg" height="210" width="240"></a>
+            <div class="section__nav--icon">
+                <h1>Visto</h1>
+                <p>perro beagle al parecer, marron con blanco, cansado y triste.Zona Buceo, inmediaciones Plaza Plof Palme 8 nov 2021.</p>
+            </div>
+        </div>
+        <div class="section__nav">
+            <a href="Perdida2"><img src="uploads/perdida2.jpg" height="210" width="250"></a>
+            <div class="section__nav--icon">
+                <h1>Encontrada</h1>
+                <p>Encontrado en zona de capurro/prado, muy bien cuidada. Contactarse al .....</p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionmedio">
+        <div class="section__nav">
+            <a href="Perdida3"><img src="uploads/perdida3.jpg" height="210" width="250"></a>
+            <div class="section__nav--icon">
+                <h1>Mandy</h1>
+                <p>Se perdio en zona de cordón norte, inemdiaciones de miguelete y minas, pelo negro con canas.</p>
+            </div>
+        </div>
+        <div class="section__nav">
+            <a href="Perdida4"><img src="uploads/perdido4.jpg" height="210" width="250"></a>
+            <div class="section__nav--icon">
+                <h1>Encontrado</h1>
+                <p>Perro cachorro encontrado en la zona de Lezica, Av. Lezica y Yegros. Marroncito con manchitas negras en la cara</p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="section__nav">
+            <a href="Perdida5"><img src="uploads/perdida5.jpg" height="210" width="250"></a>
+            <div class="section__nav--icon">
+                <h1>Perdida</h1>
+                <p>Se escapo de zona punta gorda, si la ven comunicarse al.....</p>
+            </div>
+        </div>
+        <div class="section__nav">
+            <a href="Perdida6"><img src="uploads/perdida6.jpg" height="210" width="250"></a>
+            <div class="section__nav--icon">
+                <h1>Mia</h1>
+                <p>Se extravio viajando por ruta 14 desde lascano a villa del carmen, cicatriz abdomen lado izquierdo, si la ven comunicarse al .....</p>
+            </div>
+        </div>
+    </section>
+
+    <form action="/upload", method="POST" enctype="multipart/form-data">
+    <input type="file" name="ourfile">
+    <input type="submit" value="Enviar">
+    </form>
+
+    <footer class="button" id="footer">
+        <ul class="icons">
+            <li><a href="https://www.twitter.com/" class="icon brands fa-twitter"><img src="static/img/twitter.png" width="30px" height="20px"></a></li>
+            <li><a href="https://www.facebook.com/" class="icon brands fa-facebook-f"><img src="static/img/facebook.png" width="30px" height="20px"></a></li>
+            <li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><img src="static/img/instagram.png" width="30px" height="20px"></a></li>
+            <li><a href="https://www.linkedin.com/" class="icon brands fa-linkedin"><img src="static/img/linkedin.png" width="30px" height="20px"></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+        </ul>
+    </footer>
+
+</div>
+</body>
+</html>

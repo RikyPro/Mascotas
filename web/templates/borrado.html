@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Tu Mascota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h1>Registro de usuarios</h1>
+        <div class="fadeIn first">
+            <img src="static/img/mascotas.png" height="120" width="120"/>
+        </div>
+        <form action="" method="post" autocomplete="on">
+            <input type="text"
+                   id="ID"
+                   class="fadeIn first"
+                   name="ID"
+                   placeholder="id-usuario"
+                   value="{{request.form.ID }}">
+                <input type="submit" class="fadeIn second" value="Eliminar">
+        </form>
+          {% if error %}
+        <p><strong>Error:</strong> {{ error }}</p>
+        {% endif %}
+
+        <div id="formFooter">
+            <p>Sembrando 2021</p>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

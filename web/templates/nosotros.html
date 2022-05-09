@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Tu Mascota</title>
+    <link href="static/css/inicio.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<div class="box">
+    <ul class="nav">
+            <li><a href="inicio">Inicio</a></li>
+            <li><a href="veterinarias">Veterinarias</a></li>
+            <li><a href="refugios">Refugios</a></li>
+            <li><a href="hotel">Hotel para mascotas</a></li>
+            <li><a href="nosotros">Nosotros</a></li>
+            <li><a href="usuarios">Usuarios</a></li>
+            <li><a href="donaciones">Donaciones</a></li>
+    </ul>
+    <section class="section1">
+        <div class="nosotros">
+            <div class="section__nav--icon">
+                <h1>Sobre Nosotros</h1>
+                <p>En Tu Mascota tenemos el compromiso de “Ayudarnos mutuamente” y sobre todo nos interesa el bienestar de las mascotas, por ello integramos una aplicación web que está en constante actualización.</p>
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos un grupo de personas el cual estamos interesados en ayudar a solucionar el gran problema de la sobrepoblación en los refugios de animales, en la adopción de mascotas, y ayuda en el extravío de las mismas, a través de una página web construida por nosotros mismos, tratando de involucrar las nuevas tecnologías para cumplir nuestro fin. Nos interesa generar una conexión con familias interesadas en adoptar mascotas o brindar información sobre algún hallazgo.<br>En consecuencia, nuestra página conforma un vínculo directo, brindando la mayor cantidad de información posible sobre una mascota, ya sea datos descriptivos, fotos e inclusive datos de contacto para la localización.<br>Nos sentimos sumamente orgullosos de poder formar parte de esta web y lograr hacer posible la reducción de tantos animales sin hogar. Así como también, de poder brindar nuestros servicios de manera favorable para el reencuentro de aquellas mascotas que han sido extraviadas.</p>
+                <h2>Nuestro propósito</h2>
+                <p>Sabemos lo que significa perder a nuestra mascota y que puede ser uno de los momentos más desesperantes para una familia. Las mascotas son un miembro más del grupo familiar y el solo hecho de pensar que pueden estar solos y perdidos puede provocar una gran angustia.<br>Es por ello, que nosotros nos proponemos hacer que los reencuentros y los vínculos con mascotas sin hogar sean aún más sencillos y efectivos.<br>En simples pasos, podrás ser un integrante más de nuestra comunidad y así poder colaborar en hacer posible muchos reencuentros. De igual modo, todos colaboraremos en tu búsqueda, en caso de que tu mascota se haya perdido.</p>
+                <h2>Políticas de privacidad</h2>
+                <p>Tu Mascota se compromete a respetar la privacidad de quienes visitan y utilizan su web.<br>La presente Política de Privacidad tiene como finalidad informar al usuario acerca del tratamiento de los datos personales que sean ingresados en el sitio web, de conformidad con la Protección de Datos de carácter personal, siendo de nuestro interés mantener en el anonimato aquellos datos que el usuario desea reservar al público.<br>La utilización del sitio web o de cualquiera de sus servicios asociados implica la aceptación por el usuario de las disposiciones contenidas en la presente Política de Privacidad, y que sus datos personales sean tratados según se estipula en la misma.</p>
+                <h2>Contacto</h2>
+                <p>Por más información, te puedes contactar con nosotros a través de info@tumascota.com <br>Nuestro teléfono de contacto: 09X-XXX-XXX</p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="section__nav--icon"></div>
+    </section>
+
+    <div>
+        <table class="table">
+        <thead>
+        <tr>
+            <th scope="col" >nombre</th>
+            <th scope="col" >rol</th>
+            <th scope="col" >id</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for usuarios in usuarios %}
+        <tr>
+            <th scope="row">{{usuarios['id']}}</th>
+            <td>{{usuarios['nombre']}}</td>
+            <td>{{usuarios['id']}}</td>
+        </tr>
+        </tbody>
+        {% endfor %}
+
+        </table>
+    </div>
+
+    <footer class="button" id="footer">
+        <ul class="icons">
+            <li><a href="https://www.twitter.com/" class="icon brands fa-twitter"><img src="static/img/twitter.png" width="30px" height="20px"></a></li>
+            <li><a href="https://www.facebook.com/" class="icon brands fa-facebook-f"><img src="static/img/facebook.png" width="40px" height="30px"></a></li>
+            <li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><img src="static/img/instagram.png" width="30px" height="20px"></a></li>
+            <li><a href="https://www.linkedin.com/" class="icon brands fa-linkedin"><img src="static/img/linkedin.png" width="30px" height="20px"></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+        </ul>
+    </footer>
+    <div>
+        {% for usuario in usuarios %}
+            <p> {{ usuario }} </p>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
